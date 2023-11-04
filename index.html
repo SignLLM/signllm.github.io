@@ -136,37 +136,27 @@
 
 <html>
   <head>
-		<title>FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding</title>
+		<title>SignLLM: Sign Languages Production Large Language Models</title>
 		<meta property="og:image" content=""/>
-		<meta property="og:title" content="FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding" />
+		<meta property="og:title" content="SignLLM: Sign Languages Production Large Language Models" />
   </head>
 
   <body>
     <br>
           <center>
-          	<span style="font-size:42px">FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding</span>
+          	<span style="font-size:42px">SignLLM: Sign Languages Production Large Language Models</span>
 	  		  <table align=center width=600px>
 	  			  <tr>
 	  	              <td align=center width=100px>
 	  					<center>
-	  						<span style="font-size:24px"><a href="https://sdolivia.github.io/">Dian Shao</a></span>
+	  						<span style="font-size:24px"><a href="XXX">XXX</a></span>
 		  		  		</center>
 		  		  	  </td>
 	  	              <td align=center width=100px>
 	  					<center>
-	  						<span style="font-size:24px"><a href="http://zhaoyue-zephyrus.github.io/">Yue Zhao</a></span>
+	  						<span style="font-size:24px"><a href="XXX">XXX</a></span>
 		  		  		</center>
 		  		  	  </td>
-	  	              <td align=center width=100px>
-	  					<center>
-	  						<span style="font-size:24px"><a href="http://daibo.info/">Bo Dai</a></span>
-		  		  		</center>
-		  		  	  </td>
-					<td align=center width=100px>
-						<center>
-							<span style="font-size:24px"><a href="http://dahua.me/">Dahua Lin</a></span>
-						</center>
-					</td>
 				</table>
           		<!-- <span style="font-size:30px">ECCV 2016.</span> -->
 
@@ -174,11 +164,11 @@
 				  <tr>
 					  <td align=center width=100px>
 						<center>
-							<span style="font-size:20px"><a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a></span>
+							<span style="font-size:20px"><a href="XXX">XXXX</a></span>
 						</center>
 					  </td>
 			  </table>
-			IEEE Conference on Computer Vision and Pattern Recognition (<a href="http://cvpr2020.thecvf.com/" target="_blank">CVPR</a>) 2020, <font color="#e86e14">Oral Presentation</font>
+			<!-- IEEE Conference on Computer Vision and Pattern Recognition (<a href="http://cvpr2023.thecvf.com/" target="_blank">CVPR</a>) 2023, <font color="#e86e14">Oral Presentation</font> -->
           </center>
 
    		  <br><br>
@@ -189,18 +179,15 @@
   			  <tr>
   	              <td width=400px>
   					<center>
-  	                	<a href="./resources/images/teaser.png"><img class="rounded" src = "./resources/images/teaser.png" width="800px"></img></href></a><br>
+  	                	<a href="./resources/images/cover.drawio.png"><img class="rounded" src = "./resources/images/cover.drawio.png" width="800px"></img></href></a><br>
 					</center>
   	              </td>
                 </tr>
   	              <td width=400px>
   					<center>
-  	                	<span style="font-size:14px"><i>An overview of the FineGym dataset.
-							We provide coarse-to-fine annotations both temporally and semantically.
-							There are three levels of categorical labels.
-							The temporal dimension (represented by the two bars) is also divided into two levels, i.e., actions and sub-actions.
-							Sub-actions could be described generally using set categories or precisely using element categories.
-							Ground-truth element categories of sub-action instances are obtained via manually constructed decision-trees.</i>
+  	                	<span style="font-size:14px"><i>Multilingual Sign Language Production: (a) Enter an American English or German sentence you want to translate; (b) Our
+							SIGNLLM then translates the text into a continuous skeleton pose sequence, and supports prompt word input; (c) The textual correspondence of sign language skeletal postures varies across different countries. These postures can be post-processed into more comprehensible
+							images via conditional image generation models such as ControlNet.</i>
 					</center>
   	              </td>
 
@@ -219,7 +206,7 @@
 				<td width=300px>
 					<center>
 						<a href="#video"><img class="rounded" onmouseover="this.src='./resources/images/video_icon.png';" onmouseout="this.src='./resources/images/video_icon.png';" src = "./resources/images/video_icon.png" height = "120px"></a><br>
-						<span style="font-size:16px">Videos at CVPR'2020</span><br>
+						<span style="font-size:16px">Videos at CVPR'2023</span><br>
 					</center>
 				</td>
 				<td width=300px>
@@ -246,17 +233,10 @@
 		  </table>
 		  <center>
 			<span>
-		 	On public benchmarks, current action recognition techniques have achieved great success.
-		  	However, when used in real-world applications, e.g. sport analysis, which requires the capability of parsing an activity into phases and differentiating between subtly different actions, their performances remain far from being satisfactory.
-		  	To take action recognition to a new level, we develop <i>FineGym</i>, a new dataset built on top of gymnasium videos.
-		  	Compared to existing action recognition datasets, FineGym is distinguished in richness, quality, and diversity.
-		  	In particular, it provides temporal annotations at both action and sub-action levels with a three-level semantic hierarchy.
-		  	For example, a <i>"balance beam"</i> event will be annotated as a sequence of elementary sub-actions derived from five sets:
-		  	<i>"leap-jumphop"</i>, <i>"beam-turns"</i>, <i>"flight-salto"</i>, <i>"flight-handspring"</i>, and <i>"dismount"</i>, 
-		  	where the sub-action in each set will be further annotated with finely defined class labels.
-		  	This new level of granularity presents significant challenges for action recognition, e.g. how to parse the temporal structures from a coherent action, and how to distinguish between subtly different action classes.
-		  	We systematically investigate representative methods on this dataset and obtain a number of interesting findings. We hope this dataset could advance research towards action understanding.
-		  	</span>
+				&nbsp;&nbsp;The high complexity of handling sign language-related datasets has resulted in a shortage of pre-trained models in the field of continuous Sign Language Production (SLP) that can be extensively utilized by people. This also constrains the application of existing models on another type of sign language or new datasets. To address this issue, we created the first multilingual sign language dataset PROMPT2SIGN based on mainstream sign language data (temporarily English and German). Based on this dataset, we propose first Multilingual SLP large language model called SIGNLLM.<br><br>
+				&nbsp;&nbsp;PROMPT2SIGN transforms a vast collection of videos into a data format that is lightweight and optimized for easy retrieval by translation models such as seq2seq and text2text. We synthesized corresponding prompt word data for it, which enables ordinary SLP models to handle basic dialogues. SIGNLLM features a novel Multi-Language Switching Framework (MLSF) that enables it to generate sign language gestures for corresponding languages from English and German text. Furthermore, our proposed SLP technique integrates two novel functional components and introduces an innovative loss function. These enhancements broaden the horizon of large-scale SLP models, fostering improved performance and streamlined training procedures when operating at a substantial scale.<br><br>
+				&nbsp;&nbsp;We report SIGNLLM multiple benchmark scores and its BLEU scores on the development/testing sets of mainstream datasets like Prompt2Sign and How2Sign/PHOENIX14T. Various mainstream experiments yield SOTA results.
+			</span>
 		  </center>
   		  <br><br>
 		  <hr>
@@ -267,15 +247,13 @@
 				<table align=center width=720px>
 					<tr>
 						<td align=center width=720px>
-							<iframe width="600" height="320" src="https://www.youtube.com/embed/notLDzBJ2mg" frameborder="0" allowfullscreen></iframe>
+							<iframe width="600" height="320" src="XXX" frameborder="0" allowfullscreen></iframe>
 						</td>
 					  </tr>
 					<tr>
 						<td align=center width=720px>
 						  <span style="font-size:14px"><i>
-							An illustrative video of FineGym's hiecharcial annotations given a complete competition.
-							Action and subaction boundaries are highlighted while irrelevant fragments are fast-forwarded.
-							We also present the tree-based process at the end of the demo video.</i>
+							XXXX</i>
 						</span>
 						   </td>
 					  </tr>
@@ -286,12 +264,12 @@
 		  <hr>
 
 		  <table id="video" align=center width=720px>
-			<center><h1>5-Minute Oral presentation video</h1></center>
+			<center><h1>XXXX</h1></center>
 			<tr>
 				<table align=center width=720px>
 					<tr>
 						<td align=center width=720px>
-							<iframe width="600" height="320" src="https://www.youtube.com/embed/nXpB5l40trg" frameborder="0" allowfullscreen></iframe>
+							<iframe width="600" height="320" src="XXX" frameborder="0" allowfullscreen></iframe>
 						</td>
 					  </tr>
 					<tr>
@@ -300,39 +278,22 @@
 		  </table>
 		   <br><br>
 		  <hr>
-
-		  <table align=center width=720px>
-			<center><h1>1-Minute presentation video</h1></center>
-			<tr>
-				<table align=center width=720px>
-					<tr>
-						<td align=center width=720px>
-							<iframe width="600" height="320" src="https://www.youtube.com/embed/b1Sm1WDcypw" frameborder="0" allowfullscreen></iframe>
-						</td>
-					  </tr>
-					<tr>
-					 </table>
-			  </tr>
-		  </table>
-		   <br><br>
-		  <hr>
-
 
 		  <table align=center width=720px>
 			<center><h1>Dataset hierarchy</h1></center>
 			<tr>
 				<td width=400px>
 				  <center>
-					  <a><img class="rounded" src = "./resources/images/hierarchy.png" width="800px"></img></a><br>
+					  <a><img class="rounded" src = "./resources/images/method.drawio.png" width="800px"></img></a><br>
 				</center>
 				</td>
 			</tr>
 				<td width=400px>
 				  <center>
 					  <span style="font-size:14px"><i>
-						FineGym organizes both the semantic and temporal annotations hierarchically.
-						The upper part shows three levels of categorical labels, namely events (e.g. balance beam), sets (e.g. dismounts) and elements (e.g. salto forward tucked).
-						The lower part depicts the two-level temporal annotations, i.e. the temporal boundaries of actions (in the top bar) and sub-action instances (in the bottom bar).
+						(left) An overview of the structure and form of PROMPT2SIGN dataset. 
+						(middle) The interaction principle of Text2LangGloss and MLSF, computational methods with reinforcement learning. 
+						(right) The output of SIGNLLM can be converted into most pose representation formats, which can then be rendered into realistic human appearance by style transfer/specifically fine-tuned generative model.
 						</i>
 				</center>
 				</td>
@@ -342,52 +303,25 @@
 		  <hr>
 
 		  <table align=center width=720px>
-			<center><h1>Sub-action examples</h1></center>
+			<center><h1>Other Method</h1></center>
 			<tr>
 				<center>
 				<span>
-					We present several examples of fine-grained sub-action instances.
-					Each group belongs to three element categories within a same event (BB, FX, UB, and VT).
-					It can be seen such fine-grained instances contain subtle and challenging differences.
-					(Hover on the GIF for a 0.25x slowdown)</span>
+					In our work, we have improved upon the Text2Gloss framework by incorporating a marker that produces Gloss with the necessary linguistic attributes, 
+					while also representing profound characteristics through variables \( v_t \) and \( xu \) within neural networks. Additionally, 
+					we have introduced five key elements—user, agent, environment, iterative update process, 
+					and PLC—which collectively outline a reinforcement learning process tailored for sequence prediction.</span>
 				<br>
 				</center>
-				<td width=360px>
-					<center>
-						<span style="font-size:22px"><a>Balance Beam (BB)</a></span><br>
-						<a><img onmouseover="this.src='./resources/examples/example_bb_01_slow.gif';" onmouseout="this.src='./resources/examples/example_bb_01_normal.gif';" src = "./resources/examples/example_bb_01_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_bb_02_slow.gif';" onmouseout="this.src='./resources/examples/example_bb_02_normal.gif';" src = "./resources/examples/example_bb_02_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_bb_03_slow.gif';" onmouseout="this.src='./resources/examples/example_bb_03_normal.gif';" src = "./resources/examples/example_bb_03_normal.gif" width = "100px"></img></a>
-					</center>
-				</td>
-				<td width=360px>
-					<center>
-						<span style="font-size:22px"><a>Floor Exercise (FX)</a></span><br>
-						<a><img onmouseover="this.src='./resources/examples/example_fx_01_slow.gif';" onmouseout="this.src='./resources/examples/example_fx_01_normal.gif';" src = "./resources/examples/example_fx_01_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_fx_02_slow.gif';" onmouseout="this.src='./resources/examples/example_fx_02_normal.gif';" src = "./resources/examples/example_fx_02_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_fx_03_slow.gif';" onmouseout="this.src='./resources/examples/example_fx_03_normal.gif';" src = "./resources/examples/example_fx_03_normal.gif" width = "100px"></img></a>
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td width=360px>
-					<center>
-						<span style="font-size:22px"><a>Uneven Bar (UB)</a></span><br>
-						<a><img onmouseover="this.src='./resources/examples/example_ub_01_slow.gif';" onmouseout="this.src='./resources/examples/example_ub_01_normal.gif';" src = "./resources/examples/example_ub_01_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_ub_02_slow.gif';" onmouseout="this.src='./resources/examples/example_ub_02_normal.gif';" src = "./resources/examples/example_ub_02_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_ub_03_slow.gif';" onmouseout="this.src='./resources/examples/example_ub_03_normal.gif';" src = "./resources/examples/example_ub_03_normal.gif" width = "100px"></img></a>
-					</center>
-				</td>
-				<td width=360px>
-					<center>
-						<span style="font-size:22px"><a>Vault (VT)</a></span><br>
-						<a><img onmouseover="this.src='./resources/examples/example_vt_01_slow.gif';" onmouseout="this.src='./resources/examples/example_vt_01_normal.gif';" src = "./resources/examples/example_vt_01_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_vt_02_slow.gif';" onmouseout="this.src='./resources/examples/example_vt_02_normal.gif';" src = "./resources/examples/example_vt_02_normal.gif" width = "100px"></img></a>
-						<a><img onmouseover="this.src='./resources/examples/example_vt_03_slow.gif';" onmouseout="this.src='./resources/examples/example_vt_03_normal.gif';" src = "./resources/examples/example_vt_03_normal.gif" width = "100px"></img></a>
-					</center>
-				</td>
-			</tr>
 		  </table>
+		  <tr>
+			<td>
+			  <img src="./resources/images/RL.drawio.png" alt="Reinforcement Learning Process" style="max-width:100%;height:auto;">
+			</td>
+			<td>
+			  <img src="./resources/images/text2langgloss.drawio.png" alt="Text to Language Gloss Framework" style="max-width:100%;height:auto;">
+			</td>
+		  </tr>
 
 		  <br><br>
 		  <hr>
@@ -395,18 +329,18 @@
 		  <table id='analysis' align=center width=720px>
 			<center><h1>Empirical Studies and Analysis</h1></center>
 			<table>
-			<center><h2> (1) Element-level action recognition raises great challenges for existing methods. </h2></center>
+			<center><h2> (1) American Sign Language Production (ASLP). </h2></center>
 			<tr>
 				  <td width=400px>
 				  <center>
-					  <a><img class="rounded" src = "./resources/images/element_recognition.png" width="800px"></img></a><br>
+					  <a><img class="rounded" src = "./resources/images/1.png" width="800px"></img></a><br>
 				</center>
 				</td>
 			</tr>
 			<tr>
 				<td align=center width=720px>
 				  <span style="font-size:14px"><i>
-					Element-level action recognition results of representative methods.</i>
+					Comparison of different models of SIGNLLM with baseline. Models M and T represent MLSF and Text2LangGloss trained ASLP models, respectively.</i>
 				</span>
 				</td>
 			</tr>
@@ -415,18 +349,18 @@
 			<br>
 
 			<table>
-			<center><h2> (2) Sparse sampling is insufficient for fine-grained action recognition. </h2></center>
+			<center><h2> (2) German Sign Language Production (GSLP). </h2></center>
 			<tr>
 				  <td width=400px>
 				  <center>
-					  <a><img class="rounded" src = "./resources/images/tsn_vs_nframe.png" width="320px"></img></a><br>
+					  <a><img class="rounded" src = "./resources/images/2.png" width="320px"></img></a><br>
 				</center>
 				</td>
 			</tr>
 			<tr>
 				<td align=center width=720px>
 				  <span style="font-size:14px"><i>
-					Performances of TSN when varying the number of sampled frames during training.</i>
+					Comparison of different models of SIGNLLM with previous work.</i>
 				</span>
 				</td>
 			</tr>
@@ -435,24 +369,20 @@
 			<br>
 
 			<table>
-				<center><h2> (3) How important is temporal information? </h2></center>
-				(a) Motion features (e.g. optical flows) could capture frame-wise temporal dynamics, leading to better performance of TSN.<br>
-				(b) Temporal dynamics play an important role in FineGym, and TRN could capture it.<br>
-				(c) Performance of TSM drops sharply when the number of testing frames is very different from that in training,
-				while TSN maintains its performance as only temporal average pooling is applied in it.<br>
+				<center><h2> (3) Ablation Study. </h2></center>
 				<tr>
 					  <td width=400px>
 					  <center>
-						  <a><img class="rounded" src = "./resources/images/temporal_importance.png" width="800px"></img></a><br>
+						  <a><img class="rounded" src = "./resources/images/3.png" width="800px"></img></a><br>
 					</center>
 					</td>
 				</tr>
 				<tr>
 					<td align=center width=720px>
 					  <span style="font-size:14px"><i>
-						(a) Per-class performances of TSN with motion and appearance features in 6 element categories. <br>
-						(b) Performances of TRN on the set UB-circles using ordered or shuffled testing frames.<br>
-						(c) Mean-class accuracies of TSM and TSN on Gym99 when trained with 3 frames and tested with more frames.</i>
+						SignLLM-40M-Base results for Text to Pose on the ASL part of PROMPT2SIGN, with multiple data augmentation techniques. Base: 
+						Multi-Language Switching Framework with Normal MSE Loss, FP: Future Prediction, GN: Gaussian Noise, Text2LangGloss: 
+						Text2LangGloss with Normal MSE Loss, PLC: Priority Learning Channe</i>
 					</span>
 					</td>
 				</tr>
@@ -461,47 +391,24 @@
 			<br>
 
 			<table>
-				<center><h2> (4) Does pre-training on large-scale video datasets help? </h2></center>
-				On FineGym, pre-training on Kinetics is not always helpful.
-				One potential reason is the large gaps in terms of temporal patterns between coarse- and fine-grained actions. 
+				<center><h2> (4) Training Efficiency Study. </h2></center>
 				<tr>
 					<td width=400px>
 					<center>
-						<a><img class="rounded" src = "./resources/images/pretrain.png" width="240px"></img></a>
+						<a><img class="rounded" src = "./resources/images/4.png" width="240px"></img></a>
 					</center>
 					</td>
 				</tr>
 				<tr>
 					<td align=center width=720px>
 					<span style="font-size:14px"><i>
-					Per-class performances of I3D pre-trained on Kinetics and ImageNet in various element categories.</i>
+					the comparison of the effect of different Settings on DTW values (the lower the better) at different times is determined by epoch.</i>
 					</span>
 					</td>
 				</tr>
 				</table>
 
 			<br>
-			
-			<table>
-				<center><h2> (4) Why pose information does not help? </h2></center>
-				Skeleton-based ST-GCN struggles due to the challenges in skeleton estimation on gymnastics instances.
-				<tr>
-					<td width=400px>
-					<center>
-						<a><img onmouseover="this.src='./resources/examples/pose_slow.gif';" onmouseout="this.src='./resources/examples/pose.gif';" src = "./resources/examples/pose.gif" width = "400px"></img></a>
-					</center>
-					</td>
-				</tr>
-				<tr>
-					<td align=center width=720px>
-					<span style="font-size:14px"><i>
-					The results of person detection and pose estimation using <a href='https://github.com/MVIG-SJTU/AlphaPose'>AlphaPose</href></a> for a Vault routine.
-					It can be seen that detections and pose estimations of the gymnast are missed in multiple frames, especially in frames with intense motion.
-					These frames are important for fine-grained recognition. (Hover on the GIF for a 0.25x slowdown) </i>
-					</span>
-					</td>
-				</tr>
-				</table>
 					
 		</table>
 	      <br><br>
@@ -513,48 +420,17 @@
 			<tr>
 				<td width=300px>
 					<center>
-						<span style="font-size:24px">Categories</span><br>
-						<br>
-						<img class="rounded" onmouseover="this.src='./resources/images/dataset_icon.jpg';" onmouseout="this.src='./resources/images/dataset_icon.jpg';" src = "./resources/images/dataset_icon.jpg" height = "150px"><br><br>
-						<span style="font-size:16px"><a href='resources/dataset/finegym_glabel_to_Qtree.json'>question annotation (json)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/set_categories.txt'>set-level category list (txt)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym99_categories.txt'>Gym99 category list (txt)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym288_categories.txt'>Gym288 category list (txt)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym530_categories.txt'>Gym530 category list (txt)</a></span><br>
-					<span style="font-size:16px"></span>
-					</center>
-				</td>
-				<td width=300px>
-					<center>
 						<span style="font-size:24px">v1.0</span><br>
 						<br>
 						<img class="rounded" onmouseover="this.src='./resources/images/dataset_icon.jpg';" onmouseout="this.src='./resources/images/dataset_icon.jpg';" src = "./resources/images/dataset_icon.jpg" height = "150px"><br><br>
-						<span style="font-size:16px"><a href='resources/dataset/finegym_annotation_info_v1.0.json'>temporal annotation (json)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym99_train_element_v1.0.txt'>Gym99 train split</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym99_val_element.txt'>Gym99 val split</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym288_train_element_v1.0.txt'>Gym288 train split</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym288_val_element.txt'>Gym288 val split</a></span><br>
-					<span style="font-size:16px"></span>
-					</center>
-				</td>
-				<td width=300px>
-					<center>
-						<span style="font-size:24px">v1.1</span><br><br>
-						<img class="rounded" onmouseover="this.src='./resources/images/dataset_icon.jpg';" onmouseout="this.src='./resources/images/dataset_icon.jpg';" src = "./resources/images/dataset_icon.jpg" height = "150px"><br><br>
-						<span style="font-size:16px"><a href='resources/dataset/finegym_annotation_info_v1.1.json'>temporal annotation (json)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym99_train_element_v1.1.txt'>Gym99 train split</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym99_val_element.txt'>Gym99 val split (same as v1.0)</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym288_train_element_v1.1.txt'>Gym288 train split</a></span><br>
-						<span style="font-size:16px"><a href='resources/dataset/gym288_val_element.txt'>Gym288 val split (same as v1.0)</a></span><br>
+						<span style="font-size:16px"><a href='https://github.com/SignLLM/Prompt2Sign'>Prompt2Sign</a></span><br>
 					<span style="font-size:16px"></span>
 					</center>
 				</td>
 				<table>
 				<center><h2> Updates </h2></center>
-				[23/07/2020] We have made pre-extracted feature available at GitHub. Check out <a href='https://github.com/SDOlivia/FineGym/'>here</a>.<br>
-				[16/04/2020] We fix a small issue on the naming of the subaction identifier "A_{ZZZZ}_{WWWW}" to avoid ambiguity.
-				(Thanks <a href='https://kennymckormick.github.io/'>Haodong Duan</a> for pointing this out.)<br>
-				[16/04/2020] We include new subsections to track updates and address FAQs.<br>
+				[04/11/2023] We have made pre-extracted feature available at GitHub. Check out <a href='https://github.com/SignLLM/Prompt2Sign'>here</a>.<br>
+				[04/11/2023] We include new subsections to track updates and address FAQs.<br>
 				<center><h2> FAQs </h2></center>
 				Q0: License issue:<br>
 				A0: The annotations of FineGym are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
@@ -702,7 +578,7 @@
 			   <tr>
 				 <td align=center><a href=""><img class="layered-paper-big" style="height:160px" src="./resources/images/paper_pdf_thumb.png"/></a></td>
 				 <td><span style="font-size:14pt">Shao, Zhao, Dai, Lin.<br>
-				 FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding<br>
+				 SignLLM: Sign Languages Production Large Language Models<br>
 				 In CVPR, 2020 (oral).<br>
 				 (<a href="https://arxiv.org/abs/2004.06704">arXiv</a>)</a>
 				 <span style="font-size:4pt"><a href=""><br></a>
@@ -729,7 +605,7 @@
 				<!-- <center><span style="font-size:28px"><b>Cite</b></span></center> -->
 				<pre style = "font-family:Courier; font-size:14px">
 @inproceedings{shao2020finegym,
-title={FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding},
+title={SignLLM: Sign Languages Production Large Language Models},
 author={Shao, Dian and Zhao, Yue and Dai, Bo and Lin, Dahua},
 booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 year={2020}
