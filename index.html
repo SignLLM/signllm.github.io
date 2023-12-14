@@ -503,22 +503,18 @@
 				</pre>
 				</table>
 
-\item \textbf{How to extract key points?} We extracted two-dimensional (2D) frontal human pose information from videos of different resolutions, including upper body pose information of the body and hands, through OpenPose~\cite{openpose}. Includes 8 upper body key points. 21 keypoints in each hand, which is a total of 42 hand keypoints. These two parts add up to fifty keypoints, each of which has three XYZ messages, or 150 numbers.
-
+<br>How to extract key points?</b> We extracted two-dimensional (2D) frontal human pose information from videos of different resolutions, including upper body pose information of the body and hands, through OpenPose~\cite{openpose}. Includes 8 upper body key points. 21 keypoints in each hand, which is a total of 42 hand keypoints. These two parts add up to fifty keypoints, each of which has three XYZ messages, or 150 numbers.
+<br>
 Then in steps ``json (2D keypoints) to h5'', ``h5 to txt (3D keypoints)'', and ``txt to skels (Standard Pose Storage)'':
-
-
-\item \textbf{How to complete ``json to h5''?} We successively obtain a json number in a folder (a frame of pose information, 50 key points, 150 numbers), and then read all the json numbers in a folder into the key name of an h5 (h5 is a format of numpy) file, multiple folders form multiple build names, and finally form an h5 file.
-
-
-
-\item \textbf{How to complete ``h5 to txt''?} We read each key name of h5 in turn (the original folder name), create the corresponding folder, each folder generates 5 txt files, the last one is the result, the first 4 txt stores the intermediate variable. This is the part of 2D to 3D, and the key formula 3 in the text is the formula of this part. Additionally, we read the relevant data and delete the unqualified data such as NaN, 0, or replace it with the average median of the data. Finally, we condensed the data to about 1/5 of the original, this data comes from the processing of ASL part.
-
-
+<br>
+<b>How to complete ``json to h5''?</b> We successively obtain a json number in a folder (a frame of pose information, 50 key points, 150 numbers), and then read all the json numbers in a folder into the key name of an h5 (h5 is a format of numpy) file, multiple folders form multiple build names, and finally form an h5 file.
+<br>
+<b>How to complete ``h5 to txt''?</b> We read each key name of h5 in turn (the original folder name), create the corresponding folder, each folder generates 5 txt files, the last one is the result, the first 4 txt stores the intermediate variable. This is the part of 2D to 3D, and the key formula 3 in the text is the formula of this part. Additionally, we read the relevant data and delete the unqualified data such as NaN, 0, or replace it with the average median of the data. Finally, we condensed the data to about 1/5 of the original, this data comes from the processing of ASL part.
+<br>
 <b>How to complete ``txt to skels''?</b> We read the fifth txt file of each folder in turn, the number of lines in the txt file represents the number of frames of the folder corresponding to the video, we read a line of txt (150 numbers, separated by Spaces, a frame of information), plus a space, and then add a count value (the current line divided by the total number of lines, representing the progress bar), add a space after the count value, Then add the second line txt and continue to repeat the above. Then we put a txt (a video information, the total number of numbers in it = 151* video frames) into a line of content, in turn, tens of thousands of videos are all stored in our standard format.
 
 
-				
+				<!--
 				The example shows the annotations related to this video.
 				First of all, we assign the unique identifier <a style='font-family: Courier'>"0LtLS9wROrk"</a> to that video,
 				which corresponds to the 11-digit YouTube identifier. <br>
@@ -536,6 +532,7 @@ Then in steps ``json (2D keypoints) to h5'', ``h5 to txt (3D keypoints)'', and `
 				(2) the exact timestamps of each stage <i>relative</i> to the starting time of event. ('timestamps', in seconds)
 				As a result, each subaction instance has a unique identifier <a style='font-family: Courier'>"{VIDEO_ID}_E_{XXXXXX}_{YYYYYY}_A_{ZZZZ}_{WWWW}"</a>.
 				This identifier serves as the instance name in the train/val splits of Gym99 and Gym288.
+				-->
 			</tr>
 		   </table>
 
