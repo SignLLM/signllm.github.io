@@ -195,12 +195,12 @@
 				<td width=300px>
 					<center>
 						<a href="#download"><img class="rounded" onmouseover="this.src='./resources/images/data_icon.png';" onmouseout="this.src='./resources/images/data_icon.png';" src = "./resources/images/data_icon.png" height = "120px"></a><br>
-						<span style="font-size:16px">Prompt2Sign (annotations)</span><br>
+						<span style="font-size:16px">Prompt2Sign (tools)</span><br>
 					</center>
 				</td>
 				<td width=300px>
 					<center>
-						<a href="#video"><img class="rounded" onmouseover="this.src='./resources/images/video_icon.png';" onmouseout="this.src='./resources/images/video_icon.png';" src = "./resources/images/video_icon.png" height = "120px"></a><br>
+						<a href="#demo"><img class="rounded" onmouseover="this.src='./resources/images/video_icon.png';" onmouseout="this.src='./resources/images/video_icon.png';" src = "./resources/images/video_icon.png" height = "120px"></a><br>
 						<span style="font-size:16px">Additional details</span><br>
 					</center>
 				</td>
@@ -230,13 +230,13 @@
 			<span>
 				&nbsp;&nbsp;The high complexity of handling sign language-related datasets has resulted in a shortage of pre-trained models in the field of continuous Sign Language Production (SLP) that can be extensively utilized by people. This also constrains the application of existing models on another type of sign language or new datasets. To address this issue, we created the first multilingual sign language dataset PROMPT2SIGN based on mainstream sign language data (temporarily English and German). Based on this dataset, we propose first Multilingual SLP large language model called SIGNLLM.<br><br>
 				&nbsp;&nbsp;PROMPT2SIGN transforms a vast collection of videos into a data format that is lightweight and optimized for easy retrieval by translation models such as seq2seq and text2text. We synthesized corresponding prompt word data for it, which enables ordinary SLP models to handle basic dialogues. SIGNLLM features a novel Multi-Language Switching Framework (MLSF) that enables it to generate sign language gestures for corresponding languages from English and German text. Furthermore, our proposed SLP technique integrates two novel functional components and introduces an innovative loss function. These enhancements broaden the horizon of large-scale SLP models, fostering improved performance and streamlined training procedures when operating at a substantial scale.<br><br>
-				&nbsp;&nbsp;We report SIGNLLM multiple benchmark scores and its BLEU scores on the development/testing sets of mainstream datasets like Prompt2Sign and How2Sign/PHOENIX14T. Various mainstream experiments yield SOTA results.
+				&nbsp;&nbsp;We report SIGNLLM multiple benchmark scores and its BLEU scores on the development/testing sets of mainstream datasets like PROMPT2SIGN and How2Sign/PHOENIX14T. Various mainstream experiments yield SOTA results.
 			</span>
 		  </center>
   		  <br><br>
 		  <hr>
 
-		  <table align=center width=720px>
+		  <table id="demo" align=center width=720px>
 			<center><h1>Demo video</h1></center>
 			<tr>
 				<table align=center width=720px>
@@ -424,14 +424,14 @@
 				</td>
 				<table>
 				<center><h2> Updates </h2></center>
-				[04/11/2023] We have made pre-extracted feature available at GitHub. Check out <a href='https://github.com/SignLLM/Prompt2Sign'>here</a>.<br>
-				[04/11/2023] We include new subsections to track updates and address FAQs.<br>
+				[14/12/2023] We have made supplementary materials and demo available at this page.<br>
+				[04/11/2023] We have made Prompt2Sign and Tools available at GitHub. Check out <a href='https://github.com/SignLLM/Prompt2Sign'>here</a>.<br>
 				<center><h2> FAQs </h2></center>
 				Q0: License issue:<br>
-				A0: The annotations of FineGym are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
-				Q1: Some links are invalid on YouTube. How can I obtain the missing videos?<br>
-				Q1': I am located in mainland China and I cannot access YouTube. How can I get the dataset?<br>
-				A1: Please submit a Google form at <a href='https://forms.gle/z8iTwRhdMsfRCNkm7'>this link</a>.
+				A0: The Prompt2Sign and SignLLM are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
+				Q1: Some links are invalid on page. How can I obtain the missing information?<br>
+				Q1: I am located in mainland China and I cannot access YouTube. How can I get the dataset?<br>
+				A1: Please submit a GitHub issue at <a href='https://github.com/SignLLM'>Any repository of user "SignLLM"</a>.
 				We may reach you shortly.<br>
 				Q2: Is the event-/element-level instance in your dataset cut in integral seconds?<br>
 				A2: No. All levels of instances (actions and sub-actions) are annotated in <i>exact</i> timestamp (milliseconds) 
