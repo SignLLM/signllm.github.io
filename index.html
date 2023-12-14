@@ -430,18 +430,13 @@
 				Q0: License issue:<br>
 				A0: The Prompt2Sign and SignLLM are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
 				Q1: Some links are invalid on page. How can I obtain the missing information?<br>
-				Q1: I am located in mainland China and I cannot access YouTube. How can I get the dataset?<br>
+				Q1: I am located in mainland China and I cannot access Google Driver. How can I get the dataset?<br>
 				A1: Please submit a GitHub issue at <a href='https://github.com/SignLLM'>Any repository of user "SignLLM"</a>.
 				We may reach you shortly.<br>
-				Q2: Is the event-/element-level instance in your dataset cut in integral seconds?<br>
-				A2: No. All levels of instances (actions and sub-actions) are annotated in <i>exact</i> timestamp (milliseconds) 
-				in a pursuit of frame-level preciseness.
-				The number in the identifier is derived from integral seconds due to conciseness.
-				Please refer to the instructions below for details.<br>
-				Q3: Difference of Mean and Top-1 accuracy in Table 2 & 3?<br>
-				A3: The Top-K accuracy is the fraction of the instances whose correct label falls in the top-k most confident predictions. In our case we take K=1.<br>
-				The mean accuracy is the averaged per-class accuracy. To be specific, we calculate the top-1 accuracy of each class i to be A_i.
-				The mean accuracy is the arithmetic mean of A_{1...N}, i.e. (A_1 + A_2 + ... + A_N)/N, where N is the number of classes.
+				Q2: Is the data in the data set complete relative to the original video? I feel like it's smaller than the actual data set.<br>
+				A2: We're using a dataset that is a subset of the video clips that correspond to the lines and then we compress those clips. Compression to 1/5 of the original size refers to 1/5 of the size of the clip.<br>
+				Q3: How to complete the data conversion format? Specific to the level of each number. Too much remains unclear.<br>
+				A3: You can look at the <a href='https://signllm.github.io/Prompt2Sign/'>dataset</a> itself and the <a href='https://github.com/SignLLM/Prompt2Sign'>tools</a>, with an example and plenty of text describing it in detail.<br>
 				<center><h2> How to finish data format conversion (JSON->Ours)? </h2></center> 
 				Below, we show an example JSON to digital file:
 				<pre style='font-family: Courier; font-size:14px'>
