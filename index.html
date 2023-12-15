@@ -572,7 +572,7 @@ def getTXT(key, fnameIn, i, mode):
             save(f"out_data/{mode}/{key}/demo3.txt", [Xx, Xy, Xw])
 
             # Initial 3D pose estimation
-            lines0, rootsx0, rootsy0, rootsz0, anglesx0, anglesy0, anglesz0, Yx0, Yy0, Yz0 = pose2Dto3D.initialization(
+            ... = pose2Dto3D.initialization(
                 ...
               )
             save(f"out_data/{mode}/{key}/demo4.txt", [Yx0, Yy0, Yz0])
