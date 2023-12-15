@@ -440,60 +440,46 @@
 				<center><h2> How to finish data format conversion (JSON->Ours)? </h2></center> 
 				Below, we show an example JSON to digital file:
 				<pre style='font-family: Courier; font-size:14px'>
-"0LtLS9wROrk": {
-	"E_002407_002435": {
-		"event": 4,
-		"segments": {
-			"A_0003_0005": {
-				"stages": 1,
-				"timestamps": [
-					[
-						3.45,
-						5.64
-					]
-				]
-			},
-			"A_0006_0008": { ... },
-			"A_0023_0028": { ... },
-			...
-		},
-		"timestamps": [
-			[
-				2407.32,
-				2435.28
-			]
-		]
-	},
-	"E_002681_002688": {
-		"event": 1,
-		"segments": {
-			"A_0000_0006": {
-				"stages": 3,
-				"timestamps": [
-					[
-						0.04,
-						3.2
-					],
-					[
-						3.2,
-						4.49
-					],
-					[
-						4.49,
-						6.57
-					]
-				]
-			}
-		},
-		"timestamps": [
-			[
-				2681.88,
-				2688.48
-			]
-		]
-	},
-	"E_002710_002737": { ... },
-	...
+{
+    "version": 1.3,
+    "people": [
+        {
+            "person_id": [
+                -1
+            ],
+            "pose_keypoints_2d": [
+                666.535,
+                219.883,
+                ...
+	        //There are a lot of numbers here, but we only get eight key points in the upper body.
+            ],
+            "face_keypoints_2d": [
+                624.108,
+                204.299,
+                0.813047,
+                //We don't train the face.
+            ],
+            "hand_left_keypoints_2d": [
+                694.829,
+                455.679,
+                0.352355,
+                ...
+		//21 key points, 63 values.
+		
+            ],
+            "hand_right_keypoints_2d": [
+                516.344,
+                348.757,
+                0.0184774,
+                ...
+		////21 key points, 63 values.
+            ],
+            "pose_keypoints_3d": [],
+            "face_keypoints_3d": [],
+            "hand_left_keypoints_3d": [],
+            "hand_right_keypoints_3d": []
+        }
+    ]
 }
 				</pre>
 				</table>
