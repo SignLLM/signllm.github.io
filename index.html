@@ -1,3 +1,14 @@
+<!-- 
+### H5 file:
+Dir name1: [...150 digits number...]
+Dir name2: [...150 digits number...]
+Dir name3: [...150 digits number...]
+...
+
+### Ours file:
+150 digits number 
+-->
+
 <script src="http://www.google.com/jsapi" type="text/javascript"></script> 
 <script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
@@ -438,8 +449,9 @@
 				Q3: How to complete the data conversion format? Specific to the level of each number. Too much remains unclear.<br>
 				A3: You can look at the <a href='https://signllm.github.io/Prompt2Sign/'>dataset</a> itself and the <a href='https://github.com/SignLLM/Prompt2Sign'>tools</a>, with an example and plenty of text describing it in detail.<br>
 				<center><h2> How to finish data format conversion (JSON->Ours)? </h2></center> 
-				Below, we show an example JSON to digital file:
+				Below, we show an example JSON:
 				<pre style='font-family: Courier; font-size:14px'>
+### JSON file:
 {
     "version": 1.3,
     "people": [
@@ -451,7 +463,7 @@
                 666.535,
                 219.883,
                 ...
-	        //There are a lot of numbers here, but we only get eight key points in the upper body.
+	        //We only get eight key points in the upper body(24 number).
             ],
             "face_keypoints_2d": [
                 624.108,
