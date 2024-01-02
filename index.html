@@ -883,15 +883,15 @@ year={2024}
 
   ga('create', 'UA-75863369-1', 'auto');
   ga('send', 'pageview');
-	
+
   // 获取 iframe 元素
   const iframe = document.querySelector('iframe');
 
   // 获取 iframe 中的音频元素
   const audio = iframe.contentDocument.querySelector('audio');
 
-  // 将音频设置为静音
-  audio.muted = true;
+  // 暂停音频的播放
+  audio.pause();
 
 </script>
               
