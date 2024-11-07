@@ -179,8 +179,13 @@ Dir name3: [...150 digits number...]
 		  		  	  </td>
 				<br>
 				</table>
-                        <table align=center width=500px>
+                        <table align=center width=600px>
 	  			  <tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="">Mingyu Zhao</a><sup>1</sup></span>
+						  </center>
+						</td>
                         <td align=center width=100px>
 	  					<center>
 	  						<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=lxCqdpoAAAAJ&hl=en">Yapeng Tian</a><sup>5</sup></span>
@@ -244,13 +249,13 @@ Dir name3: [...150 digits number...]
   			  <tr>
   	              <td width=400px>
   					<center>
-  	                	<a href="./resources/images/cover.drawio.png"><img class="rounded" src = "./resources/images/cover.drawio.png" width="800px"></img></href></a><br>
+  	                	<a href="./resources/images/cover_v9.drawio.png"><img class="rounded" src = "./resources/images/cover.drawio.png" width="800px"></img></href></a><br>
 					</center>
   	              </td>
                 </tr>
   	              <td width=400px>
   					<center>
-  	                	<span style="font-size:14px"><i> <b>Overview:</b> (left) We present examples and descriptions of various parts of our Prompt2Sign dataset; (right) Our SignLLM bilingual sign language production methods, operating mechanisms and demonstration, and different ways.</i>
+  	                	<span style="font-size:14px"><i> <b>Overview:</b> Majorcomponents(e.g., Text, Prompt, Compressed Pose, etc.) of Prompt2Sign superset. Compressed Pose is reprocessed pose data that is suitable for training, we use public sign language videos to produce compressed pose data in our predefined format; (right) Our proposed SignLLM aims to generate sign language poses for various application scenarios.</i>
 					</center>
   	              </td>
 
@@ -305,7 +310,7 @@ Dir name3: [...150 digits number...]
 		  </table>
 		  <center>
 			<span>
-				&nbsp;&nbsp;In this paper, we introduce the first comprehensive multilingual sign language dataset named Prompt2Sign, which builds from public sign language data including American Sign Language (ASL) and seven others. Our dataset transforms a vast array of videos into a streamlined, model-friendly format, optimized for training with translation models like seq2seq and text2text. Building on this new dataset, we propose SignLLM, the first multilingual Sign Language Production (SLP) model, which includes two novel multilingual SLP modes that allow for the generation of sign language gestures from input text or prompt. Both of the modes can use a new loss and a module based on reinforcement learning, which accelerates the training by enhancing the model's capability to autonomously sample high-quality data. We present benchmark results of SignLLM, which demonstrate that our model achieves state-of-the-art performance on SLP tasks across eight sign languages.<br><br>
+				&nbsp;&nbsp;In this paper, we introduce the first comprehensive multilingual sign language superset named Prompt2Sign, which builds from public sign language data including American Sign Language (ASL) and seven others. Our superset transforms a vast array of videos into a streamlined, model-friendly format, optimized for training with translation models like seq2seq and text2text. Building on this new superset, we propose SignLLM, the first multilingual Sign Language Production (SLP) model, which includes two novel multilingual SLP modes that allow for the generation of sign language gestures from input text or prompt. Both of the modes can use a new loss and a module based on reinforcement learning, which accelerates the training by enhancing the model's capability to autonomously sample high-quality data. We present benchmark results of SignLLM, which demonstrate that our model achieves state-of-the-art performance on SLP tasks across eight sign languages.<br><br>
 			
 			</span>
 		  </center>
@@ -565,7 +570,7 @@ Dir name3: [...150 digits number...]
 		  <hr>
 
 		  <table align=center width=720px>
-			<center><h1>Dataset and Main Methods</h1></center>
+			<center><h1>Superset and Main Methods</h1></center>
 			<tr>
 				<td width=400px>
 				  <center>
@@ -576,7 +581,7 @@ Dir name3: [...150 digits number...]
 				<td width=400px>
 				  <center>
 					  <span style="font-size:14px"><i>
-						(left) An overview of the structure and form of PROMPT2SIGN dataset. 
+						(left) An overview of the structure and form of PROMPT2SIGN superset. 
 						(middle) The interaction principle of Text2LangGloss and MLSF, computational methods with reinforcement learning. 
 						(right) The output of SIGNLLM can be converted into most pose representation formats, which can then be rendered into realistic human appearance by style transfer/specifically fine-tuned generative model.
 						</i>
@@ -710,7 +715,7 @@ Dir name3: [...150 digits number...]
 					<center>
 						<span style="font-size:24px">v1.0</span><br>
 						<br>
-						<img class="rounded" onmouseover="this.src='./resources/images/dataset_icon.jpg';" onmouseout="this.src='./resources/images/dataset_icon.jpg';" src = "./resources/images/dataset_icon.jpg" height = "150px"><br><br>
+						<img class="rounded" onmouseover="this.src='./resources/images/superset_icon.jpg';" onmouseout="this.src='./resources/images/superset_icon.jpg';" src = "./resources/images/superset_icon.jpg" height = "150px"><br><br>
 						<span style="font-size:16px"><a href='https://signllm.github.io/Prompt2Sign'>Prompt2Sign</a></span><br>
 					<span style="font-size:16px"></span>
 					</center>
@@ -727,15 +732,15 @@ Dir name3: [...150 digits number...]
 				Q0: License issue:<br>
 				A0: The Prompt2Sign and SignLLM are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
 				Q1: Some links are invalid on page. How can I obtain the missing information?<br>
-				Q1: I am located in mainland China and I cannot access Google Driver. How can I get the dataset?<br>
+				Q1: I am located in mainland China and I cannot access Google Driver. How can I get the superset?<br>
 				A1: Please submit a GitHub issue at <a href='https://github.com/SignLLM'>Any repository of user "SignLLM"</a>.
 				We may reach you shortly.<br>
 				Q2: Is the data in the data set complete relative to the original video? I feel like it's smaller than the actual data set.<br>
-				A2: We're using a dataset that is a subset of the video clips that correspond to the lines and then we compress those clips. Compression to 1/5 of the original size refers to 1/5 of the size of the clip.<br>
+				A2: We're using a superset that is a subset of the video clips that correspond to the lines and then we compress those clips. Compression to 1/5 of the original size refers to 1/5 of the size of the clip.<br>
 				Q3: Can we fully achieve the actual effect in the paper or presentation?<br>
 				A3: No, according to the data and the actual situation, most of our cases are not up to the level of use. Dynamic or static display, we are selected to show the best effect.
 				Q4: How to complete the data conversion format? Specific to the level of each number. Too much remains unclear.<br>
-				A4: You can look at the <a href='https://signllm.github.io/Prompt2Sign/'>dataset</a> itself and the <a href='https://github.com/SignLLM/Prompt2Sign'>tools</a>, with an example and plenty of text describing it in detail.<br>
+				A4: You can look at the <a href='https://signllm.github.io/Prompt2Sign/'>superset</a> itself and the <a href='https://github.com/SignLLM/Prompt2Sign'>tools</a>, with an example and plenty of text describing it in detail.<br>
 				<center><h2> How to finish data format conversion (JSON->Ours)? </h2></center> 
 				Below, we show an example JSON:
 				<pre style='font-family: Courier; font-size:14px'>
