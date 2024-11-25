@@ -149,6 +149,53 @@ Dir name3: [...150 digits number...]
 
 </style>
 
+<style>
+    .scroll-container {
+      height: 50px;
+      width: 200px;
+      overflow-x: auto;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      text-align: left;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    
+    /* 默认隐藏滚动条 */
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* 鼠标悬停时显示滚动条 */
+    .scroll-container:hover::-webkit-scrollbar {
+      display: block;
+      height: 8px;
+      background-color: #f5f5f5;
+    }
+    
+    .scroll-container:hover::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    
+    .scroll-container:hover::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+    
+    .content-wrap {
+      width: max-content;
+      text-align: left;
+    }
+    
+    .title-container {
+      margin: 5px 5px 0 5px;
+      text-align: center;
+    }
+    </style>
+
 <html>
   <head>
 		<title>SignLLM: Sign Languages Production Large Language Models</title>
@@ -510,7 +557,7 @@ Dir name3: [...150 digits number...]
                 </td>
               </tr>
 					<tr>
-						<td align=center colspan="3">
+						<td align=center colspan="4">
 						    <span style="font-size:18px; text-align:center;"><i>
 						      QP: Synthetic sign language video generated through style transfer modeling (intermediate input video has undergone processing like acceleration and rendering; results under Ideal Future Conditions). 
 							<br><br> 
@@ -780,7 +827,7 @@ Dir name3: [...150 digits number...]
 				[2023.11.04] We have made Prompt2Sign and Tools available at GitHub. Check out <a href='https://github.com/SignLLM/Prompt2Sign'>here</a>.<br>
 				<center><h2> FAQs </h2></center>
 				Q0: License issue:<br>
-				A0: The Prompt2Sign and SignLLM are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
+				A0: The Prompt2Sign and SignLLM are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License. Some subsets need to be implemented by users themselves.<br>
 				Q1: Some links are invalid on page. How can I obtain the missing information?<br>
 				Q1: I am located in mainland China and I cannot access Google Driver. How can I get the superset?<br>
 				A1: Please submit a GitHub issue at <a href='https://github.com/SignLLM'>Any repository of user "SignLLM"</a>.
@@ -991,7 +1038,8 @@ def getTXT(key, fnameIn, i, mode):
 	  		  <center><h1>Acknowledgements</h1></center>
 				We sincerely appreciate the previous work, open source tools, and researchers for underserved populations. We stand on the shoulders of their work to achieve further achievements. Readers can learn how we utilize and improve previous work through our citations.<br><br>
 				Additionally, we have noticed spontaneous promotion from over 80-120 marketing media outlets and independent content creators, but <span style="color: green;">they may have some misconceptions or exaggerations about our model</span>. Our model takes input text or prompts to generate videos of sign language pose in various languages. Certain conditions need to be input into the model for further processing to obtain the final videos, so we need to work even harder to strengthen the end-to-end capabilities (ie, <span style="color: green;">the pose video output from the model needs to be processed to achieve the effect of real people, and we not said that we could export real people directly</span>). <br><br>
-				We are grateful to our supporters including Microsoft, Amazon, Swiss TV, as well as organizations and accessibility practitioners worldwide for their continued support and encouragement, many people's experiences have deeply moved us. As this system continues to iterate, we will gradually deepen our connection with you, and wish you all keep healthy and keep happiness.
+				We are grateful to our supporters including Microsoft, Amazon, Swiss TV, as well as organizations and accessibility practitioners worldwide for their continued support.	
+			       <!--, many people's experiences have deeply moved us. As this system continues to iterate, we will gradually deepen our connection with you, and wish you all keep healthy and keep happiness.-->
 			</left>
 		</td>
 			 </tr>
