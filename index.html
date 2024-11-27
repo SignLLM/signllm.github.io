@@ -458,16 +458,16 @@ Dir name3: [...150 digits number...]
             <tbody>
               <tr>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/asl_vid3.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/asl_vid3.mp4" frameborder="0"></video>
                 </td>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/gsl_vid3.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/gsl_vid3.mp4" frameborder="0"></video>
                 </td>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/ksl_vid2.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/ksl_vid2.mp4" frameborder="0"></video>
                 </td>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/dsgs_vid3.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/dsgs_vid3.mp4" frameborder="0"></video>
                 </td>
               </tr>
               <tr>
@@ -527,16 +527,16 @@ Dir name3: [...150 digits number...]
           
               <tr>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/lsf_vid2.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/lsf_vid2.mp4" frameborder="0"></video>
                 </td>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/lis_vid3.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/lis_vid3.mp4" frameborder="0"></video>
                 </td>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/lsa_vid4.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/lsa_vid4.mp4" frameborder="0"></video>
                 </td>
                 <td align="center" width="240px">
-                  <video width="200" height="282" controls autoplay loop muted playsinline src="./src/videos8/tsl_vid2.mp4" frameborder="0"></video>
+                  <video width="200" height="282" controls autoplay loop muted playsinline src="./resources/videos8/tsl_vid2.mp4" frameborder="0"></video>
                 </td>
               </tr>
               <tr>
@@ -704,6 +704,27 @@ Dir name3: [...150 digits number...]
 		  <hr>
 
 		  <table align=center width=720px>
+			<center><h1>Main Method</h1></center>
+			<tr>
+				<td width=400px>
+				  <center>
+					  <a><img class="rounded" src = "./resources/images/method_v2.drawio.png" width="800px"></img></a><br>
+				</center>
+				</td>
+			</tr>
+				<td width=400px>
+				  <center>
+					  <span style="font-size:14px"><i>
+						(Left) MLSF contains parallel Enc-Dec groups (i.e., Text2Pose × number of languages), the Prompt2LangGloss adds a language attribute marker at the gloss channel (i.e., Text2Gloss2Pose → Prompt2LangGloss2Pose). 
+						(Right) The output of SignLLM can be converted into a skeletal pose video, which can then be rendered into a realistic human appearance by vid2vid models.
+						</i>
+				</center>
+				</td>
+
+		  </table>
+
+		 <!--
+		  <table align=center width=720px>
 			<center><h1>Dataset and Main Methods</h1></center>
 			<tr>
 				<td width=400px>
@@ -715,14 +736,14 @@ Dir name3: [...150 digits number...]
 				<td width=400px>
 				  <center>
 					  <span style="font-size:14px"><i>
-						(left) An overview of the structure and form of PROMPT2SIGN dataset. 
+						(left) An overview of the structure and form of Prompt2Sign dataset. 
 						(middle) The interaction principle of Text2LangGloss and MLSF, computational methods with reinforcement learning. 
-						(right) The output of SIGNLLM can be converted into most pose representation formats, which can then be rendered into realistic human appearance by style transfer/specifically fine-tuned generative model.
+						(right) The output of SignLLM can be converted into most pose representation formats, which can then be rendered into realistic human appearance by style transfer/specifically fine-tuned generative model.
 						</i>
 				</center>
 				</td>
 
-		  </table>
+		  </table>--> 
 	      <br><br>
 		  <hr>
 
@@ -740,10 +761,10 @@ Dir name3: [...150 digits number...]
 		  </table>
 		  <tr>
 			<td>
-			  <img src="./resources/images/RL.drawio.png" alt="Reinforcement Learning Process" style="max-width:100%;height:auto;">
+			  <img src="./resources/images/RL.drawio_v2.png" alt="Reinforcement Learning Process" style="max-width:100%;height:auto;">
 			</td>
 			<td>
-			  <img src="./resources/images/text2langgloss.drawio.png" alt="Text to Language Gloss Framework" style="max-width:100%;height:auto;">
+			  <img src="./resources/images/text2langgloss_v2.drawio.png" alt="Text to Language Gloss Framework" style="max-width:100%;height:auto;">
 			</td>
 		  </tr>
 
@@ -764,7 +785,7 @@ Dir name3: [...150 digits number...]
 			<tr>
 				<td align=center width=720px>
 				  <span style="font-size:14px"><i>
-					Comparison of different models of SIGNLLM with baseline. Models M and T represent MLSF and Text2LangGloss trained ASLP models, respectively.</i>
+					Comparison of different models of SignLLM with baseline. Models M and T represent MLSF and Text2LangGloss trained ASLP models, respectively.</i>
 				</span>
 				</td>
 			</tr>
@@ -784,7 +805,7 @@ Dir name3: [...150 digits number...]
 			<tr>
 				<td align=center width=720px>
 				  <span style="font-size:14px"><i>
-					Comparison of different models of SIGNLLM with previous work.</i>
+					Comparison of different models of SignLLM with previous work.</i>
 				</span>
 				</td>
 			</tr>
@@ -804,7 +825,7 @@ Dir name3: [...150 digits number...]
 				<tr>
 					<td align=center width=720px>
 					  <span style="font-size:14px"><i>
-						SignLLM-40M-Base results for Text to Pose on the ASL part of PROMPT2SIGN, with multiple data augmentation techniques. Base: 
+						SignLLM-40M-Base results for Text to Pose on the ASL part of Prompt2Sign, with multiple data augmentation techniques. Base: 
 						Multi-Language Switching Framework with Normal MSE Loss, FP: Future Prediction, GN: Gaussian Noise, Text2LangGloss: 
 						Text2LangGloss with Normal MSE Loss, PLC: Priority Learning Channe</i>
 					</span>
