@@ -327,7 +327,7 @@ Dir name3: [...150 digits number...]
                 </tr>
   	              <td width=400px>
   					<center>
-  	                	<span style="font-size:14px"><i> <b>Overview:</b> Majorcomponents(e.g., Text, Prompt, Compressed Pose, etc.) of Prompt2Sign dataset. Compressed Pose is reprocessed pose data that is suitable for training, we use public sign language videos to produce compressed pose data in our predefined format; (right) Our proposed SignLLM aims to generate sign language poses for various application scenarios.</i>
+  	                	<span style="font-size:14px"><i> <b>Overview:</b> (Left) Major components(e.g., Text, Prompt, Compressed Pose, etc.) of Prompt2Sign dataset. Compressed Pose is reprocessed pose data that is suitable for training, we use public sign language videos to produce compressed pose data in our predefined format; (Right) Our proposed SignLLM aims to generate sign language poses for various application scenarios.</i>
 					</center>
   	              </td>
 
@@ -382,7 +382,7 @@ Dir name3: [...150 digits number...]
 		  </table>
 		  <center>
 			<span>
-				&nbsp;&nbsp;In this paper, we introduce the first comprehensive multilingual sign language dataset named Prompt2Sign, which builds from public sign language data including American Sign Language (ASL) and seven others. Our dataset transforms a vast array of videos into a streamlined, model-friendly format, optimized for training with translation models like seq2seq and text2text. Building on this new dataset, we propose SignLLM, the first multilingual Sign Language Production (SLP) model, which includes two novel multilingual SLP modes that allow for the generation of sign language gestures from input text or prompt. Both of the modes can use a new loss and a module based on reinforcement learning, which accelerates the training by enhancing the model's capability to autonomously sample high-quality data. We present benchmark results of SignLLM, which demonstrate that our model achieves state-of-the-art performance on SLP tasks across eight sign languages.<br><br>
+				&nbsp;&nbsp;In this paper, we propose SignLLM, a multilingual Sign Language Production (SLP) large language model, which includes two novel multilingual SLP modes MLSF and Prompt2LangGloss that allow sign language gestures generation from query texts input and question-style prompts input respectively. Both modes can use a new RL loss based on reinforcement learning and a new RL module named Priority Learning Channel. These RL components can accelerate the training by enhancing the model's capability to sample high-quality data. For SignLLM's training, we introduce Prompt2Sign, a comprehensive multilingual sign language dataset, which builds from public data, including American Sign Language (ASL) and seven others. This dataset standardizes information by extracting pose information from sign language videos into a unified compressed format. We extensively evaluate SignLLM, demonstrating that our model achieves state-of-the-art performance on SLP tasks across eight sign languages.<br><br>
 			
 			</span>
 		  </center>
@@ -413,19 +413,31 @@ Dir name3: [...150 digits number...]
 					  </tr>
 					<tr>
 						<td align=center width=240px>
-						  <span style="font-size:14px"><i>
-							(a) The control surface on the wing, which is operated by horizontally shifting the stick to the right and left, enables lateral movement.</i>
-						</span>
+							<div class="scroll-container">
+					                    <div class="content-wrap">
+					                      <span style="font-size:14px">
+					                        <i>(a) The control surface on the wing, which is operated by horizontally shifting the stick to the right and left, enables lateral movement.</i>
+					                      </span>
+					                    </div>
+					                  </div>
 						   </td>
 						<td align=center width=240px>
-						  <span style="font-size:14px"><i>
-							(b) Allow me to demonstrate the correct form for a proper pike position.</i>
-						</span>
+							<div class="scroll-container">
+					                    <div class="content-wrap">
+					                      <span style="font-size:14px">
+					                        <i>(b) Allow me to demonstrate the correct form for a proper pike position.</i>
+					                      </span>
+					                    </div>
+					                  </div>
 						   </td>
 						<td align=center width=240px>
-						  <span style="font-size:14px"><i>
-							(c) Allow me to showcase this demonstration on my back as it is much more convenient.</i>
-						</span>
+							<div class="scroll-container">
+					                    <div class="content-wrap">
+					                      <span style="font-size:14px">
+					                        <i>(c) Allow me to showcase this demonstration on my back as it is much more convenient.</i>
+					                      </span>
+					                    </div>
+					                  </div>
 						   </td>
 					  </tr>
 					<tr>
