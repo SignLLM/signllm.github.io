@@ -76,6 +76,80 @@ Dir name3: [...150 digits number...]
 	a:hover {
 		color: #208799;
 	}
+
+	.top-nav {
+		width: 800px;
+		margin: 18px auto 0 auto;
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		align-items: center;
+		font-size: 18px;
+	}
+
+	.top-nav a:link,
+	.top-nav a:visited,
+	.top-nav .nav-label {
+		color: #111;
+		text-decoration: none;
+	}
+
+	.top-nav .nav-button,
+	.top-nav .nav-label {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 42px;
+		padding: 0 18px;
+		border: 1px solid #d0d7de;
+		border-radius: 8px;
+		background: #f1f3f5;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+		font-size: 17px;
+		transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+	}
+
+	.top-nav .nav-button:hover,
+	.top-nav .nav-item:hover .nav-label {
+		color: #111;
+		border-color: #c2c8ce;
+		background: #e9ecef;
+	}
+
+	.top-nav .nav-item {
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: -10px;
+	}
+
+	.top-nav .dropdown {
+		display: none;
+		position: absolute;
+		top: calc(100% - 2px);
+		left: 50%;
+		transform: translateX(-50%);
+		background: #fff;
+		border: 1px solid #ddd;
+		border-radius: 12px;
+		padding: 8px 0;
+		min-width: 190px;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+		z-index: 10;
+	}
+
+	.top-nav .nav-item:hover .dropdown {
+		display: block;
+	}
+
+	.top-nav .dropdown a {
+		display: block;
+		padding: 9px 16px;
+		white-space: nowrap;
+	}
+
+	.top-nav .dropdown a:hover {
+		background: #f5f9fc;
+	}
 	
 	td.dl-link {
 		height: 160px;
@@ -204,6 +278,18 @@ Dir name3: [...150 digits number...]
   </head>
 
   <body>
+    <div class="top-nav">
+      <a class="nav-button" href="https://github.com/SignerX">Organization</a>
+      <div class="nav-item">
+        <span class="nav-label">More Work</span>
+        <div class="dropdown">
+          <a href="https://stablesigner.github.io/">Stable Signer</a>
+          <a href="https://signerx.github.io/SignX/">SignX</a>
+          <a href="https://signllm.github.io/">SignLLM</a>
+          <a href="https://signdiff.github.io">SignDiff</a>
+        </div>
+      </div>
+    </div>
     <br>
           <center>
           	<span style="font-size:42px">SignLLM: Sign Languages Production Large Language Models</span>
@@ -711,6 +797,7 @@ Dir name3: [...150 digits number...]
 	  -->
 
 				<center><h2> Updates </h2></center>
+	            [2026.04.06] <a href='https://stablesigner.github.io/'>Stable Signer</a> has been accepted by the ACL 2026 Main Conference!<br>
 	            [2025.10.25] Our derived work has been developed into an app called <a href='https://stablesigner.github.io/'>"Stable Signer"</a>, and it has been accepted by the ICCV 2025 Demo Track.<br>
 	  			[2025.07.30] In May, we developed a faster tool. However, for some beginners, it was difficult for them to quickly perform various video processing tasks. Now, we have added a new "Pipeline" folder <a href='https://github.com/SignLLM/Prompt2Sign/tree/main/tools-new-2025'>here</a>, which is designed to handle all sign language videos more smoothly. This will be our new processing standard. The previous dataset page has been deprecated.<br>
 				[2025.07.10] Our paper has been accepted by the ICCV Workshop! In addition, we provide the <a href='https://huggingface.co/datasets/FangSen9000/How2Sign-dwpose-original-npz/tree/main'>Original DWPose keypoint npz</a> file for your use!<br>
